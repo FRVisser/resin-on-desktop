@@ -1,7 +1,7 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-python
 
 
-RUN apt-get update && apt-get install -yq --no-install-recommends \
+RUN apt-get update && apt-get install  --fix-missing -yq --no-install-recommends \
     psmisc \
     xorg \
     mate-desktop-environment && \
